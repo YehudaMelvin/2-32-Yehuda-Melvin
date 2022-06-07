@@ -16,9 +16,16 @@
           <a class="nav-link {{ ( $title === 'Gallery') ? 'active' : '' }}" href="/gallery">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ( $title === 'Contacts') ? 'active' : '' }}" href="/contacts">Gallery</a>
+          <a class="nav-link {{ ( $title === 'Contacts') ? 'active' : '' }}" href="{{route('contacts.store')}}">Contact</a>
         </li>
       </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{route ('login')}}">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{route ('register')}}">Register</a>
+        </li>
     </div>
   </div>
 </nav>
